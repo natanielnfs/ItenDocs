@@ -8,13 +8,14 @@ Descrição do objetivo do manual.
 ### 1.2 Escopo
 Descrição do escopo do manual.
 
-## 2. Estrutura do Departamento de TI
+## [2. Estrutura do Departamento de TI](redes.md) 
 
 ### 2.1 Organograma
 Diagrama da estrutura organizacional.
 
 ### 2.2 Funções e Responsabilidades
         2.2.1 - ITEN TECNOLOGIA
+### 2.3 Estrututra Fisica
 
 ## 3. Políticas de TI
 
