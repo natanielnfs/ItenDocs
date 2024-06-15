@@ -1,118 +1,140 @@
-# Manual do Departamento de TI
+# Fluxo de funcionamento - Iten Tecnologia
 
-### 1. Introdução
+## Novo chamado
 
-### 1.1 Objetivo
-Descrição do objetivo do manual.
+### Analise de Ticket
 
-### 1.2 Escopo
-Descrição do escopo do manual.
+É aqui onde o gestor define o tipo do ticket e seu responsável
 
-## 2. Estrutura do Departamento de TI
+### Visita técnica
+- Manutenção
+- Suporte remoto
+- Verificar se etiqueta do dispositivo é válida
 
-### 2.1 Organograma
-Diagrama da estrutura organizacional.
+#### Tem etiqueta
+- Não tem etiqueta 
+  - Processo de inventário
 
-### 2.2 Funções e Responsabilidades
-        2.2.1 - ITEN TECNOLOGIA
-### 2.3 Estrututra Fisica
+#### Incluir no domínio
+- Recolhimento
+  - ⚠️ Documentar foto ou vídeo no Bitrix
+  - Equipe coleta
+  - Cliente trás
+  - Agendar visita para recolhimento
+  - Visita
+  - Check-In no escritório
+  - Transferência para manutenção
+  - Aguarda retorno da manutenção
+  - Pedido de compra
+  - Autorização de transferência para terceiros
+  - Pedido pronto
+  - Sem solução
+    - Devolução
+  - Pedido de autorização para cliente
+    - Cliente autorizou
+    - Cliente não autorizou
 
-## 3. Políticas de TI
+### Sem solução
+- Devolução
 
-### 3.1 Política de Segurança da Informação
-Definições e diretrizes para a proteção das informações.
+#### Cliente autorizou
+- Cliente não autorizou
 
-### 3.2 Política de Uso de Recursos de TI
-Regras para o uso de equipamentos e recursos tecnológicos.
+#### Aguarda terceiro
 
-### 3.3 Política de Backup
-Procedimentos para backup e restauração de dados.
+### Verifica se equipamento possui etiqueta
+- Tem etiqueta
+- Não tem etiqueta
 
-### 3.4 Política de Acesso
-Regras para concessão e revogação de acessos a sistemas e redes.
+### Define nome de equipamento
 
-## 4. Procedimentos Operacionais
+#### Veja mais detalhes sobre o padrão de nome no fluxo de inventário
 
-### 4.1 Gestão de Senhas
+- Imprime e cola etiqueta
 
-#### 4.1.1 Senhas Padrão
-Lista de senhas padrão e diretrizes para alteração.
+### Análise física
 
-#### 4.1.2 Política de Criação de Senhas
-Regras para criação e atualização de senhas.
+#### Contagem de equipamentos por tipo
+- VIRT: Virtualizador
+- SRV: Servidor
+- WKS: Workstation (terminais)
+- FWL: Firewall
+- SW: Switch
+- RTR: Roteador
 
-### 4.2 Suporte Técnico
+### Definir sigla da empresa
+⚠️ Verificar se sigla não está sendo utilizada para outra empresa no GLPI
 
-#### 4.2.1 Solicitação de Suporte
+### Definir nome de equipamentos
+Os itens devem seguir o padrão
 
-#### 4.2.1 Solicitação de Suporte
+EMP-TYPE-000A
 
-> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Ícone do WhatsApp" width="21" height="21" style="vertical-align:middle; margin-right:15px;"/> <span style="vertical-align:middle;">82 991516900</span>
->
->
-> <img src="https://as2.ftcdn.net/v2/jpg/00/19/88/93/1000_F_19889324_9JvPMCy7Fy2a95DBgJGI0ghn1whvUPYU.jpg" alt="Ícone de Globo" width="21" height="21" style="vertical-align:middle; margin-right:15px;"/> <span style="vertical-align:middle;"> [https://www.itentecnologia.com.br](https://www.itentecnologia.com.br)
 
-        
+Onde:
+- EMP = SIGLA DA EMPRESA
+- TYPE = TIPO DO DISPOSITIVO
+- 0000 = CONTAGEM CRESCENTE
 
-#### 4.2.2 Resolução de Problemas
-Passos para resolução de problemas comuns.
+⚠️ Com exceção para os tipos: FWL e SRV, que devem estar na frente do nome.
 
-### 4.3 Gestão de Incidentes
+Exemplo: SRV-EMP-0001
 
-#### 4.3.1 Registro de Incidentes
-Como registrar incidentes de TI.
+### Exportar lista XLSX no NafTI
+1. Acessar NafT
+2. Clique em exportar etiqueta
+3. Filtre os dispositivos
+4. Clique em exportar como XLSX
 
-#### 4.3.2 Resposta a Incidentes
-Procedimentos para resposta a incidentes de segurança.
+### Impressão
+- Acesse o template de etiquetas que está na base de conhecimento, e importe o XSLX exportado na etapa anterior, logo imprima em massa todas etiquetas.
 
-## 5. Normas e Padrões
+### Agendar visita
+- Visita
 
-### 5.1 Padrões de Hardware e Software
-Lista de hardware e software aprovados para uso.
+### Alterar nome do dispositivo
+Essa etapa é crucial para inventário, pode ser realizada na inclusão no Active Directory
 
-### 5.2 Padrões de Configuração
-Diretrizes para configuração de sistemas e dispositivos.
+- Colar etiqueta em seu respectivo equipamento
+- Criar equipamento no GLPI
+- Fotografar e documentar dispositivo no GLPI
+- Verificar se agente GLPI está instalado e se sincronizou informações
 
-## 6. Decisões Padrão
+### Verifique a lista de nomenclaturas de dispositivos na base de conhecimentos do Bitrix
 
-### 6.1 Diretrizes de Compras
-Procedimentos para aquisição de novos equipamentos e software.
+### Técnico avalia tipo de suporte
+- Impressoras
+- Active Directory
+- VPN
+- Terminal
+- Redes
+- Internet
 
-### 6.2 Atualizações de Sistema
-Padrões para atualizações de sistemas operacionais e software.
+### Instalação de impressora
+- Impressora não imprime
 
-## 7. Documentação e Registros
+### Outro
+- Criar usuário
+- Incluir máquina no AD
+  - Não loga
 
-### 7.1 Documentação Técnica
-Requisitos para documentação de sistemas e processos.
+### Instalação de VPN
+  - VPN não conecta/lenta
 
-### 7.2 Registros de Manutenção
-Como manter registros de manutenção de hardware e software.
+### Problemas físicos
+  - Mudança de local
+  - Pedido de revisão
 
-## 8. Treinamento e Capacitação
+### Destino fora de alcance
+  - Rede parada
+  - Sem internet
+  - Wi-Fi parado
+  - Internet lenta
+  - Algo específico não carrega
 
-### 8.1 Programas de Treinamento
-Descrição dos programas de treinamento para equipe de TIIIIIII.
+### Amarelo: São pedidos que podem virar visita técnica
 
-### 8.2 Avaliação de Competências
-Métodos para avaliação das competências dos funcionários.
-
-## 9. Revisão e Atualização do Manual
-
-### 9.1 Frequência de Revisão
-Diretrizes para revisão periódica do manual.
-
-### 9.2 Procedimentos para Atualização
-Passos para atualização de políticas e procedimentos.
-
-## 10. Anexos
-
-### 10.1 Formulários
-Modelos de formulários utilizados pelo departamento de TI.
-
-### 10.2 Diagramas de Rede
-Diagramas detalhados da infraestrutura de rede.
-
-### 10.3 Contatos de Emergência
-Lista de contatos de emergência e fornecedores.
-
+## Começo
+- Manutenção
+- Processo de inventário
+- Suporte remoto
