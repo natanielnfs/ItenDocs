@@ -8,7 +8,7 @@ Descrição do objetivo do manual.
 ### 1.2 Escopo
 Descrição do escopo do manual.
 
-## [2. Estrutura do Departamento de TI](redes.md) 
+## 2. Estrutura do Departamento de TI
 
 ### 2.1 Organograma
 Diagrama da estrutura organizacional.
