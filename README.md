@@ -59,7 +59,7 @@
 - SRV: Servidor
 - WKS: Workstation (terminais)
 - FWL: Firewall
-- SW: Switch
+- SWI: Switch
 - RTR: Roteador
 
 ### Definir sigla da empresa
@@ -81,7 +81,7 @@ Onde:
 Exemplo: SRV-EMP-0001
 
 ### Exportar lista XLSX no NafTI
-1. Acessar NafT
+1. Acessar NafTi
 2. Clique em exportar etiqueta
 3. Filtre os dispositivos
 4. Clique em exportar como XLSX
